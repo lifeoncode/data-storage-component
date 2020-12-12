@@ -4,48 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/style.css">
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
 
-  <div class="wrap">
-
-    <div class="wrap_inner">
-      <div class="home">
-        <img src="./images/logo.svg" alt="logo image" class="logo">
-        <div class="images">
-          <div>
-            <img src="./images/icon-document.svg" alt="">
-          </div>
-          <div>
-            <img src="./images/icon-folder.svg" alt="">
-          </div>
-          <div>
-            <img src="./images/icon-upload.svg" alt="">
-          </div>
-        </div>
+  <div class="container">
+    
+    <div class="left">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
       </div>
 
-      <div class="progress">
-        <div class="status">
-          <div>
-            <h1><span class="one">1</span><span class="eight">8</span><span class="five">5</span></h1>
-            <span>GB LEFT</span>
-          </div>
-          <div class="corner"></div>
+      <div class="features">
+        <div class="card">
+          <img src="./images/icon-document.svg" alt="">
         </div>
-        <p>You've used <strong>815 GB</strong> of your storage</p>
-        <div class="progress_bar">
-          <div class="progress_bar_inner"><div class="dot"></div></div>
+        <div class="card">
+          <img src="./images/icon-folder.svg" alt="">
         </div>
-        <div class="details">
-          <span class="left">0 GB</span>
-          <span class="right">1000 GB</span>
+        <div class="card">
+          <img src="./images/icon-upload.svg" alt="">
         </div>
       </div>
     </div>
     
+
+    <div class="right">
+      <div class="notification">
+        <div class="pointer"></div>
+        <h1>185 <span>GB LEFT</span></h1>
+      </div>
+      
+      <p>
+        You've used <span>815 GB</span> of your storage
+      </p>
+
+      <div class="progress">
+        <div class="bar">
+          <div class="point"></div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <span>0GB</span>
+        <span>1000GB</span>
+      </div>
+      
+    </div>
+    
   </div>
+
+  <div class="bg_image"></div>
+  
 </body>
 </html>
